@@ -1,18 +1,6 @@
 ---
 
 ---
-{% assign name = 'John Doe' %}
-{% assign facebook = 'JohnDoe' %}
-{% assign twitter = 'JohnDoe' %}
-{% assign snapchat = 'JohnDoe' %}
-{% assign instagram = 'JohnDoe' %}
-{% assign linkedin = 'JohnDoe' %}
-{% assign medium = 'JohnDoe' %}
-{% assign github = 'JohnDoe' %}
-{% assign gitlab = 'JohnDoe' %}
-{% assign google-plus = 'JohnDoe' %}
-{% assign reddit = 'JohnDoe' %}
-{% assign spotify = 'JohnDoe' %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -53,69 +41,71 @@ a:active { color:inherit; }
   <body>
     <div class="container my-3 full-height vertical-center">
       <div class="text-center col-12">
-        <h1>{{ name }}</h1>
+        {% for user in site.data.profiles %}
+        <h1>{{ user.name }}</h1>
         <div class="vertical-center" style="height:5em;">
           {% if facebook %}
-          <a href="https://facebook.com/{{facebook}}" target="_blank">
+          <a href="https://facebook.com/{{user.facebook}}" target="_blank">
             <i class="fa grow fa-facebook fa-3x fa-fw"></i>
           </a>
           {% endif %}
           {% if twitter %}
-          <a href="https://twitter.com/{{twitter}}" target="_blank">
+          <a href="https://twitter.com/{{user.twitter}}" target="_blank">
             <i class="fa grow fa-twitter fa-3x fa-fw"></i>
           </a>
           {% endif %}
           {% if instagram %}
-          <a href="https://instagram.com/{{instagram}}" target="_blank">
+          <a href="https://instagram.com/{{user.instagram}}" target="_blank">
             <i class="fa grow fa-instagram fa-3x fa-fw"></i>
           </a>
           {% endif %}
           {% if snapchat %}
-          <a href="https://snapchat.com/{{snapchat}}" target="_blank">
+          <a href="https://snapchat.com/{{user.snapchat}}" target="_blank">
             <i class="fa grow fa-snapchat fa-3x fa-fw"></i>
           </a>
           {% endif %}
           {% if linkedin %}
-          <a href="https://linkedin.com/{{linkedin}}" target="_blank">
+          <a href="https://linkedin.com/{{user.linkedin}}" target="_blank">
             <i class="fa grow fa-linkedin fa-3x fa-fw"></i>
           </a>
           {% endif %}
           {% if medium %}
-          <a href="https://medium.com/@{{medium}}" target="_blank">
+          <a href="https://medium.com/@{{user.medium}}" target="_blank">
             <i class="fa grow fa-medium fa-3x fa-fw"></i>
           </a>
           {% endif %}
           {% if github %}
-          <a href="https://github.com/{{github}}" target="_blank">
+          <a href="https://github.com/{{user.github}}" target="_blank">
             <i class="fa grow fa-github fa-3x fa-fw"></i>
           </a>
           {% endif %}
           {% if gitlab %}
-          <a href="https://gitlab.com/{{gitlab}}" target="_blank">
+          <a href="https://gitlab.com/{{user.gitlab}}" target="_blank">
             <i class="fa grow fa-gitlab fa-3x fa-fw"></i>
           </a>
           {% endif %}
           {% if google-plus %}
-          <a href="https://plus.google.com/{{google-plus}}" target="_blank">
+          <a href="https://plus.google.com/{{user.google-plus}}" target="_blank">
             <i class="fa grow fa-google-plus-official fa-3x fa-fw"></i>
           </a>
           {% endif %}
           {% if pinterest %}
-          <a href="https://pinterest.com/{{pinterest}}" target="_blank">
+          <a href="https://pinterest.com/{{user.pinterest}}" target="_blank">
             <i class="fa grow fa-pinterest fa-3x fa-fw"></i>
           </a>
           {% endif %}
           {% if reddit %}
-          <a href="https://reddit.com/u/{{reddit}}" target="_blank">
+          <a href="https://reddit.com/u/{{user.reddit}}" target="_blank">
             <i class="fa grow fa-reddit fa-3x fa-fw"></i>
           </a>
           {% endif %}
           {% if spotify %}
-          <a href="https://open.spotify.com/user/{{spotify}}" target="_blank">
+          <a href="https://open.spotify.com/user/{{user.spotify}}" target="_blank">
             <i class="fa grow fa-spotify fa-3x fa-fw"></i>
           </a>
           {% endif %}
         </div>
+        {% endfor %}
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

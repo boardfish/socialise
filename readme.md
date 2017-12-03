@@ -8,7 +8,7 @@ Socialise is a simple site for even the less web-savvy. Just find links to your 
 
 1. In the settings for your fork, **rename the project** to `yourusername.github.io`, where `yourusername` is your GitHub username. From then on, Socialise will be live at that web address, `yourusername.github.io`.
 
-1. **In your fork of the project, change the lines beginning with `assign` in the file `index.html`**. Replace what's in the quotes with what's at the end of your profile links. For example, if you view your personal Facebook profile, your browser will be at `facebook.com/your.username` or something like that. In this case, put `your.username` between the quotes. If you don't have an account for a shown service, simply delete that line or surround that line with `{% comment %}` and `{% endcomment %}`.
+1. **In your fork of the project, change the profile in `data/_profiles.yml`**. Replace `JohnDoe` with what's at the end of your profile links. For example, if you view your personal Facebook profile, your browser will be at `facebook.com/your.username` or something like that. In this case, put `your.username` where JohnDoe is. If you don't have an account for a shown service, simply delete that line. **I'm aware some profiles cna be hard to find (looking at you Spotify!). Instructions coming to the wiki soon.**
 
 You can also **deploy with Heroku** - instructions available soon. 
 
