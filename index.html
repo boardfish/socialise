@@ -1,3 +1,11 @@
+---
+
+---
+{% assign name = 'John Doe' %}
+{% assign facebook = 'JohnDoe' %}
+{% assign twitter = 'JohnDoe' %}
+{% assign snapchat = 'JohnDoe' %}
+{% assign instagram = 'JohnDoe' %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,17 +33,37 @@
 .grow:hover{
   font-size:4em;
 }
+a { color:inherit; }
+a:hover { color:inherit; }
+a:visited { color:inherit; }
+a:active { color:inherit; }
     </style>
   </head>
   <body>
     <div class="container my-3 full-height vertical-center">
       <div class="text-center col-12">
-        <h1>John Doe</h1>
+        <h1>{{ name }}</h1>
         <div class="vertical-center" style="height:5em;">
-          <i class="fa grow fa-facebook fa-3x fa-fw"></i>
-          <i class="fa grow fa-twitter fa-3x fa-fw"></i>
-          <i class="fa grow fa-instagram fa-3x fa-fw"></i>
-          <i class="fa grow fa-snapchat fa-3x fa-fw"></i>
+          {% if facebook %}
+          <a href="https://facebook.com/{{facebook}}">
+            <i class="fa grow fa-facebook fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
+          {% if twitter %}
+          <a href="https://twitter.com/{{twitter}}">
+            <i class="fa grow fa-twitter fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
+          {% if instagram %}
+          <a href="hhttps://instagram.com/{{instagram}}">
+            <i class="fa grow fa-instagram fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
+          {% if snapchat %}
+          <a href="hhttps://snapchat.com/{{snapchat}}">
+            <i class="fa grow fa-snapchat fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
         </div>
       </div>
     </div>
