@@ -7,6 +7,12 @@
 {% assign snapchat = 'JohnDoe' %}
 {% assign instagram = 'JohnDoe' %}
 {% assign linkedin = 'JohnDoe' %}
+{% assign medium = 'JohnDoe' %}
+{% assign github = 'JohnDoe' %}
+{% assign gitlab = 'JohnDoe' %}
+{% assign google-plus = 'JohnDoe' %}
+{% assign reddit = 'JohnDoe' %}
+{% assign spotify = 'JohnDoe' %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -72,6 +78,41 @@ a:active { color:inherit; }
           {% if linkedin %}
           <a href="https://linkedin.com/{{linkedin}}" target="_blank">
             <i class="fa grow fa-linkedin fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
+          {% if medium %}
+          <a href="https://medium.com/@{{medium}}" target="_blank">
+            <i class="fa grow fa-medium fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
+          {% if github %}
+          <a href="https://github.com/{{github}}" target="_blank">
+            <i class="fa grow fa-github fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
+          {% if gitlab %}
+          <a href="https://gitlab.com/{{gitlab}}" target="_blank">
+            <i class="fa grow fa-gitlab fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
+          {% if google-plus %}
+          <a href="https://plus.google.com/{{google-plus}}" target="_blank">
+            <i class="fa grow fa-google-plus-official fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
+          {% if pinterest %}
+          <a href="https://pinterest.com/{{pinterest}}" target="_blank">
+            <i class="fa grow fa-pinterest fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
+          {% if reddit %}
+          <a href="https://reddit.com/u/{{reddit}}" target="_blank">
+            <i class="fa grow fa-reddit fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
+          {% if spotify %}
+          <a href="https://open.spotify.com/user/{{spotify}}" target="_blank">
+            <i class="fa grow fa-spotify fa-3x fa-fw"></i>
           </a>
           {% endif %}
         </div>
