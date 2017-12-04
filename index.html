@@ -109,6 +109,11 @@ a:active { color:inherit; }
             <i class="fa grow fa-envelope fa-3x fa-fw"></i>
           </a>
           {% endif %}
+          {% if user.steam %}
+          <a href="https://steamcommunity.com/id/{{user.steam}}" target="_blank">
+            <i class="fa grow fa-steam-square fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
         </div>
         {% endfor %}
       </div>
