@@ -104,6 +104,11 @@ a:active { color:inherit; }
             <i class="fa grow fa-spotify fa-3x fa-fw"></i>
           </a>
           {% endif %}
+          {% if user.email %}
+          <a href="mailto:{{user.email}}" target="_blank">
+            <i class="fa grow fa-envelope fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
         </div>
         {% endfor %}
       </div>
