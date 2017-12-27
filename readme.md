@@ -14,6 +14,18 @@ You can also **deploy with Heroku** - instructions available soon.
 
 I'll admit that right now this is a little heavy-handed, but relatively speaking, it's still far less of an investment of time (or money!) than most people would put into making a website.
 
+## Updating
+
+To update your version of the site to use the current version of socialise, run the following in a Git terminal environment:
+
+```
+git remote add upstream https://github.com/boardfish/socialise
+git fetch upstream
+git checkout master
+git merge upstream/master
+git push
+```
+
 ## Additional Notes
 
 - **2017/12/27** - CV option added. Note that I personally don't recommend using this alongside your more personal outlets like Steam, Facebook etc. Create a folder called `files` and put your CV in there - it can be in any file format. Set the `cv` variable to the full name of the file, such as `CV-JohnDoe-20171227.pdf`, and the link should work just fine.
