@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <style type="text/css" media="all">
 .vertical-center {
@@ -112,6 +111,11 @@ a:active { color:inherit; }
           {% if user.steam %}
           <a href="https://steamcommunity.com/id/{{user.steam}}" target="_blank">
             <i class="fa grow fa-steam-square fa-3x fa-fw"></i>
+          </a>
+          {% endif %}
+          {% if user.cv %}
+          <a href="{{site.url}}/files/{{user.cv}}" target="_blank">
+            <i class="fa grow fa-file-text fa-3x fa-fw"></i>
           </a>
           {% endif %}
         </div>

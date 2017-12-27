@@ -8,8 +8,12 @@ Socialise is a simple site for even the less web-savvy. Just find links to your 
 
 1. In the settings for your fork, **rename the project** to `yourusername.github.io`, where `yourusername` is your GitHub username. From then on, Socialise will be live at that web address, `yourusername.github.io`.
 
-1. **In your fork of the project, change the profile in `data/_profiles.yml`**. Replace `JohnDoe` with what's at the end of your profile links. For example, if you view your personal Facebook profile, your browser will be at `facebook.com/your.username` or something like that. In this case, put `your.username` where JohnDoe is. If you don't have an account for a shown service, simply delete that line. **I'm aware some profiles cna be hard to find (looking at you Spotify!). Instructions coming to the wiki soon.**
+1. **In your fork of the project, change the profile in `data/_profiles.yml`**. Replace `JohnDoe` with what's at the end of your profile links. For example, if you view your personal Facebook profile, your browser will be at `facebook.com/your.username` or something like that. In this case, put `your.username` where JohnDoe is. If you don't have an account for a shown service, simply delete that line. **I'm aware some profiles can be hard to find (looking at you Spotify!). Instructions coming to the wiki soon.**
 
 You can also **deploy with Heroku** - instructions available soon. 
 
 I'll admit that right now this is a little heavy-handed, but relatively speaking, it's still far less of an investment of time (or money!) than most people would put into making a website.
+
+## Additional Notes
+
+- **2017/12/27** - CV option added. Note that I personally don't recommend using this alongside your more personal outlets like Steam, Facebook etc. Create a folder called `files` and put your CV in there - it can be in any file format. Set the `cv` variable to the full name of the file, such as `CV-JohnDoe-20171227.pdf`, and the link should work just fine.
